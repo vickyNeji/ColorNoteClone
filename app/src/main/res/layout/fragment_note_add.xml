@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/recyclerBackground"
     tools:context=".ui.NoteAddFragment">
 
 
@@ -44,13 +45,12 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <EditText
+    <com.example.colornoteclone.utils.LinedEditText
         android:id="@+id/etContent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:inputType="textMultiLine"
-        android:hint="Write content here ...."
-        android:gravity="start"
+        android:gravity="top"
+        android:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
