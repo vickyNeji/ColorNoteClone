@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:weightSum="100"
+    android:layout_marginTop="3dp"
+    android:background="@color/recyclerBackground"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+       android:layout_weight="1"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="75"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:text="This is some title"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="23sp"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Dec\n 20"
+        android:textSize="14sp"
+        />
+
+</LinearLayout>

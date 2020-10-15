@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbar_background"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/open_menu"
+                app:tint="@color/colorDarkGrey" />
+
+            <TextView
+                android:id="@+id/tvColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Color"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/ivMenu"
+                android:textColor="@color/colorDarkGrey"
+                android:layout_centerVertical="true"
+                android:textSize="22sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textSize="22sp"
+                android:textColor="@color/colorBlack"
+                android:layout_toEndOf="@+id/tvColor"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                app:tint="@color/colorDarkGrey"
+                android:src="@drawable/ic_baseline_search_24"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivAddNote"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_toStartOf="@+id/ivSearch"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_baseline_add_circle"
+                app:tint="@color/colorDarkGrey" />
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/noteRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/note_recyclerview"
+        />
+
+</LinearLayout>
