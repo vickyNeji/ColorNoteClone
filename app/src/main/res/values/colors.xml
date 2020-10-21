@@ -11,4 +11,6 @@
     <color name="toolbar_background">#EDEDED</color>
     <color name="yellow">#F1DC2F</color>
     <color name="recyclerBackground">#FEF8BA</color>
+    <color name="drawerBackground">#333333</color>
+
 </resources>

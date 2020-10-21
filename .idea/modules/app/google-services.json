@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "87229500343",
+    "firebase_url": "https://colornoteclone.firebaseio.com",
+    "project_id": "colornoteclone",
+    "storage_bucket": "colornoteclone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87229500343:android:8c5503aa23727665327632",
+        "android_client_info": {
+          "package_name": "com.example.colornoteclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87229500343-vtdghn8eeobvq63rokq01rotvndn6tl6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.colornoteclone",
+            "certificate_hash": "e6730bbf93ace7b1346c2b9819025600a91653ce"
+          }
+        },
+        {
+          "client_id": "87229500343-lm6ek4pqrakiuahimom5nkelt05eo32k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjGWemzB4gheH8tBtUB0hFX2d7u0bZXV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87229500343-lm6ek4pqrakiuahimom5nkelt05eo32k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

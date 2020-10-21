@@ -31,4 +31,14 @@
             android:name="note"
             app:argType="com.example.colornoteclone.database.Note" />
     </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.colornoteclone.ui.SignInFragment"
+        android:label="fragment_sign_in"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/onlineSyncFragment"
+        android:name="com.example.colornoteclone.ui.OnlineSyncFragment"
+        android:label="fragment_online_sync"
+        tools:layout="@layout/fragment_online_sync" />
 </navigation>
